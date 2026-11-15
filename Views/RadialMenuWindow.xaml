@@ -77,11 +77,8 @@
                                   Color="#2563EB" Opacity="0.45"/>
             </Border.Effect>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock x:Name="TxtStatusIcon" Text="✓"
-                           FontSize="36" FontWeight="Bold" Foreground="White"
-                           HorizontalAlignment="Center"/>
-                <TextBlock x:Name="TxtStatusText" Text="Pronto!"
-                           FontSize="12" FontWeight="SemiBold" Foreground="White"
+                <TextBlock x:Name="TxtStatusText" Text="Concluído"
+                           FontSize="15" FontWeight="SemiBold" Foreground="White"
                            HorizontalAlignment="Center"
                            FontFamily="SF Pro Display, Segoe UI Variable, Segoe UI"/>
             </StackPanel>

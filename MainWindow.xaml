@@ -129,7 +129,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,16,0">
-                    <Button Content="⚙️ Ajustes" Style="{StaticResource MacSecondaryButton}" Click="BtnSettings_Click"/>
+                    <Button Content="Ajustes" Style="{StaticResource MacSecondaryButton}" Click="BtnSettings_Click"/>
                 </StackPanel>
             </Grid>
 
@@ -237,13 +237,15 @@
                                             <ColumnDefinition Width="Auto"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <TextBlock Grid.Column="0" Text="🫐" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                        <Image Grid.Column="0" Source="apple_blueberry_raw.png" Width="18" Height="18"
+                                               VerticalAlignment="Center" Margin="0,0,10,0"
+                                               RenderOptions.BitmapScalingMode="HighQuality"/>
 
                                         <StackPanel Grid.Column="1" VerticalAlignment="Center">
                                             <TextBlock Text="{Binding FileName}" FontWeight="SemiBold" FontSize="12" Foreground="#0F172A" TextTrimming="CharacterEllipsis"/>
                                             <StackPanel Orientation="Horizontal" Margin="0,1,0,0">
                                                 <TextBlock Text="{Binding OriginalSizeFormatted}" FontSize="10" Foreground="#64748B"/>
-                                                <TextBlock Text=" ➔ " FontSize="10" Foreground="#94A3B8"/>
+                                                <TextBlock Text=" -> " FontSize="10" Foreground="#94A3B8"/>
                                                 <TextBlock Text="{Binding ConvertedSizeFormatted}" FontSize="10" Foreground="#15803D" FontWeight="Bold"/>
                                                 <TextBlock Text="  •  " FontSize="10" Foreground="#CBD5E1"/>
                                                 <TextBlock Text="{Binding TargetFormat}" FontSize="10" Foreground="#2563EB" FontWeight="Bold"/>

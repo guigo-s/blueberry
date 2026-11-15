@@ -44,7 +44,7 @@
                 </Border>
 
                 <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="✂️  Cortar Enquadramento (Crop)" FontWeight="Bold" FontSize="13" Foreground="#0F172A"/>
+                    <TextBlock Text="Cortar Enquadramento" FontWeight="SemiBold" FontSize="13" Foreground="#0F172A"/>
                 </StackPanel>
             </Grid>
 
@@ -116,7 +116,7 @@
                         </Button.Template>
                     </Button>
 
-                    <Button Content="✂️ Salvar Corte ao Lado do Original" Background="#2563EB" Foreground="#FFFFFF"
+                    <Button Content="Salvar Corte" Background="#2563EB" Foreground="#FFFFFF"
                             FontWeight="Bold" FontSize="12" Padding="20,8" BorderThickness="0" Cursor="Hand"
                             Click="BtnSaveCrop_Click">
                         <Button.Template>

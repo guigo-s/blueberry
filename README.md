@@ -1,86 +1,91 @@
-# 🫐 Blueberry
+# Blueberry
 
 <p align="center">
   <img src="apple_blueberry_raw.png" width="128" height="128" alt="Blueberry Icon" />
 </p>
 
 <p align="center">
-  <strong>Transformador e editor de arquivos inteligente para Windows com design Apple Liquid Glass.</strong><br>
-  Inspirado no aplicativo <em>Tangerine</em> do macOS. 100% offline, rápido e nativo.
+  <strong>Utilitário nativo para Windows de conversão e edição rápida de arquivos via gestos de arrastar e soltar.</strong><br>
+  Inspirado no design Liquid Glass e na experiência do Tangerine para macOS. Totalmente offline, privativo e integrado ao sistema.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue?style=flat-square&logo=windows" alt="Platform" />
+  <img src="https://img.shields.io/badge/Plataforma-Windows%2010%20%7C%2011-blue?style=flat-square&logo=windows" alt="Plataforma" />
   <img src="https://img.shields.io/badge/.NET-8.0%20WPF-512BD4?style=flat-square&logo=dotnet" alt=".NET 8" />
-  <img src="https://img.shields.io/badge/Engine-FFmpeg%20Local-007808?style=flat-square&logo=ffmpeg" alt="FFmpeg" />
-  <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/badge/Processamento-FFmpeg%20Local-007808?style=flat-square&logo=ffmpeg" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-black?style=flat-square" alt="Licença" />
 </p>
 
 ---
 
-## ✨ Como Funciona
+## Visão Geral
 
-O **Blueberry** roda silenciosamente em segundo plano. Basta arrastar qualquer arquivo no seu computador e usar os atalhos:
+O Blueberry opera de forma silenciosa em segundo plano a partir da bandeja do sistema. Ao arrastar qualquer arquivo no Windows Explorer ou na Área de Trabalho com as teclas de atalho pressionadas, uma interface radial com efeito de vidro translúcido surge sob o cursor para selecionar ações imediatas.
 
-### 1. Roda de Conversão de Formatos (`Shift` + Arraste)
-Segure a tecla **`Shift`** enquanto arrasta qualquer arquivo no Windows Explorer ou na Área de Trabalho. Uma roda circular em **Liquid Glass** surge ao redor do cursor com opções de conversão:
-- **Imagens:** `JPG`, `PNG`, `WEBP`, `PDF`, `ICO`, `GIF`, `BMP`, `TIFF`
-- **Vídeos:** `MP4`, `GIF` (alta definição), `MP3` (extrair áudio), `WEBM`, `MOV`, `MKV`, `AVI`
-- **Áudios:** `MP3` (320kbps), `WAV` (estúdio), `M4A` (AAC), `FLAC`, `OGG`
-- **Documentos:** `PDF`, `TXT`, `ZIP`
-
-Solte o botão do mouse sobre o formato desejado e o arquivo convertido é salvo **ao lado do arquivo original**!
-
-### 2. Ferramentas Rápidas de Edição (`Ctrl + Shift` + Arraste)
-Segure **`Ctrl + Shift`** para acessar as ferramentas avançadas:
-- **📸 Fotos & Imagens:**
-  - `CORTAR (CROP)`: Abre a telinha interativa para cortar com proporções `1:1 (Instagram)`, `9:16 (Stories/Reels)`, `16:9` ou `4:3`.
-  - `COMPRIMIR`: Reduz de 50% a 80% do peso do arquivo sem perda visível de qualidade.
-  - `LIMPAR EXIF`: Remove dados confidenciais de localização (GPS) e câmera.
-  - `P&B`: Converte em preto e branco.
-  - `REDUZIR 50%`: Reduz a resolução pela metade.
-  - `GIRAR 90°`: Rotaciona em 90 graus no sentido horário.
-- **🎬 Vídeos:**
-  - `CORTAR TEMPO (TRIM)`: Abre o editor modal com player de vídeo e sliders para cortar trechos com precisão em 0.1s.
-  - `CORTAR TAMANHO (CROP)`: Corta o enquadramento do vídeo em `9:16`, `1:1`, etc.
-  - `SNAPSHOT`: Salva uma foto nítida de capa do vídeo.
-  - `COMPRIMIR`: Otimiza para envio no Discord e WhatsApp.
-  - `MUDO`: Remove a faixa de áudio.
-  - `EXTRAIR MP3`: Extrai a trilha sonora em áudio puro.
-  - `VELOCIDADE 2X`: Acelera o vídeo mantendo áudio sincronizado.
-  - `CRIAR GIF`: Transforma o vídeo em GIF animado nítido.
-- **🎵 Áudios:**
-  - `CORTAR TEMPO (TRIM)`: Cortador de trecho de áudio.
-  - `NORMALIZAR`: Nivelamento de volume profissional.
-  - `COMPRIMIR`: Reduz taxa de bits para 96kbps.
-
-### 3. Cancelamento sem Ação
-Se mudar de ideia enquanto a roda estiver aberta, basta **puxar o mouse de volta para o centro** (`Solte p/ cancelar`). Nenhum arquivo é modificado ou copiado!
+Todos os arquivos convertidos e editados são salvos automaticamente no mesmo diretório do arquivo original.
 
 ---
 
-## 🔒 100% Offline & Seguro
+## Modos de Operação
 
-Nenhum arquivo sai da sua máquina. O processamento é realizado localmente com o **FFmpeg**, garantindo velocidade máxima e privacidade total.
+### 1. Conversão de Formatos (Shift + Arrastar)
+Segure a tecla **Shift** ao arrastar um arquivo para visualizar as opções de conversão:
+- **Imagens:** JPG, PNG, WEBP, PDF, ICO, GIF, BMP, TIFF.
+- **Vídeos:** MP4, GIF animado, MP3 (extração de áudio), WEBM, MOV, MKV, AVI.
+- **Áudios:** MP3 (320 kbps), WAV, AAC, FLAC, OGG.
+- **Documentos:** PDF, TXT, ZIP.
+
+### 2. Ferramentas de Edição Rápida (Ctrl + Shift + Arrastar)
+Segure as teclas **Ctrl + Shift** ao arrastar para acessar utilitários avançados com modais interativos:
+- **Imagens:**
+  - **Cortar Enquadramento:** Abre a interface visual de recorte com proporções predefinidas (1:1, 9:16, 16:9, 4:3).
+  - **Comprimir:** Reduz o tamanho do arquivo preservando a fidelidade visual.
+  - **Limpar EXIF:** Remove coordenadas de GPS e metadados da câmera.
+  - **Preto e Branco:** Converte a imagem para escala de cinza.
+  - **Reduzir 50%:** Redimensiona a resolução pela metade.
+  - **Girar 90°:** Aplica rotação horária de 90 graus.
+- **Vídeos:**
+  - **Cortar Duração:** Abre o editor com player de vídeo integrado e controles deslizantes para definir o início e o fim com precisão.
+  - **Cortar Enquadramento:** Recorta o aspecto do vídeo (por exemplo, 9:16 ou 1:1).
+  - **Capturar Frame:** Salva um quadro estático em alta resolução como imagem de capa.
+  - **Comprimir:** Otimiza o vídeo para envio em mensageiros como Discord e WhatsApp.
+  - **Mudo:** Remove a trilha sonora.
+  - **Extrair Áudio:** Isola a faixa sonora em formato MP3.
+  - **Acelerar 2x:** Dobra a velocidade de reprodução mantendo a sincronia do áudio.
+- **Áudios:**
+  - **Cortar Duração:** Recorta trechos com marcação de início e término.
+  - **Normalizar Volume:** Ajusta e nivela os picos sonoros.
+  - **Comprimir:** Otimiza a taxa de bits para compartilhamento rápido.
+
+### 3. Cancelamento Seguro
+Ao arrastar o cursor de volta para a área central da interface radial, a operação é cancelada sem qualquer alteração ou duplicação de arquivos.
 
 ---
 
-## 🚀 Como Executar
+## Privacidade e Processamento Local
 
-1. Certifique-se de ter o [.NET 8 SDK](https://dotnet.microsoft.com/) e o [FFmpeg](https://ffmpeg.org/) instalados.
-2. Clone o repositório:
-   ```bash
-   git clone https://github.com/SEU-USUARIO/blueberry.git
-   cd blueberry
-   ```
-3. Compile e execute:
-   ```bash
-   dotnet run
-   ```
-   *(Ou execute `Iniciar Blueberry.bat` para rodar a versão compilada em segundo plano)*.
+O processamento é realizado localmente pelo motor do FFmpeg. Nenhum arquivo, imagem ou dado é transmitido para servidores externos ou serviços em nuvem.
 
 ---
 
-## 📄 Licença
+## Instalação e Execução
 
-Distribuído sob a licença [MIT](LICENSE).
+### Opção 1: Executável Pronto (Recomendado)
+Baixe o pacote pré-compilado na aba [Releases](https://github.com/guigo-s/blueberry/releases), descompacte e execute o arquivo `Blueberry.exe`.
+
+### Opção 2: Compilação a partir do Código-Fonte
+Requisitos:
+- .NET 8.0 SDK
+- FFmpeg instalado no sistema
+
+```bash
+git clone https://github.com/guigo-s/blueberry.git
+cd blueberry
+dotnet run
+```
+
+---
+
+## Licença
+
+Este projeto é disponibilizado sob os termos da licença [MIT](LICENSE).

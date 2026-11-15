@@ -41,7 +41,7 @@
                 </Border>
 
                 <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="✂️  Cortar Duração (Trim)" FontWeight="Bold" FontSize="14" Foreground="#0F172A"/>
+                    <TextBlock Text="Cortar Duração" FontWeight="SemiBold" FontSize="14" Foreground="#0F172A"/>
                 </StackPanel>
             </Grid>
 
@@ -50,7 +50,7 @@
                 <Grid>
                     <MediaElement x:Name="MediaPreview" LoadedBehavior="Manual" UnloadedBehavior="Stop"
                                   ScrubbingEnabled="True" MediaOpened="MediaPreview_MediaOpened"/>
-                    <Button x:Name="BtnPlayPause" Content="▶ Reproduzir" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    <Button x:Name="BtnPlayPause" Content="Reproduzir" HorizontalAlignment="Center" VerticalAlignment="Center"
                             Background="#90000000" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="12"
                             Padding="14,6" BorderThickness="0" Cursor="Hand" Click="BtnPlayPause_Click">
                         <Button.Template>
@@ -105,7 +105,7 @@
                     </Button.Template>
                 </Button>
 
-                <Button Content="✂️ Salvar Corte ao Lado do Original" Background="#2563EB" Foreground="#FFFFFF"
+                <Button Content="Salvar Corte" Background="#2563EB" Foreground="#FFFFFF"
                         FontWeight="Bold" FontSize="12" Padding="20,8" BorderThickness="0" Cursor="Hand"
                         HorizontalAlignment="Right" Click="BtnSaveTrim_Click">
                     <Button.Template>

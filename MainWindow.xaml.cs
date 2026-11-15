@@ -68,12 +68,12 @@ public partial class MainWindow : Window
     private void BtnToggleIsland_Click(object sender, RoutedEventArgs e)
     {
         MessageBox.Show(
-            "O Blueberry agora opera de forma 100% invisível em segundo plano!\n\n" +
-            "Para utilizá-lo:\n" +
+            "O Blueberry opera de forma invisível em segundo plano.\n\n" +
+            "Instruções de uso:\n" +
             "1. Arraste qualquer arquivo no Windows Explorer ou na Área de Trabalho.\n" +
-            "2. Segure a tecla SHIFT enquanto arrasta.\n" +
-            "3. O menu radial azul surge exatamente no seu cursor para você soltar!",
-            "Como Usar o Blueberry 🫐",
+            "2. Segure a tecla Shift para abrir a roda de formatos, ou Ctrl + Shift para ferramentas de edição.\n" +
+            "3. Solte o arquivo sobre a opção desejada para processar instantaneamente.",
+            "Como Usar o Blueberry",
             MessageBoxButton.OK,
             MessageBoxImage.Information);
     }
@@ -81,12 +81,12 @@ public partial class MainWindow : Window
     private void BtnSettings_Click(object sender, RoutedEventArgs e)
     {
         MessageBox.Show(
-            "Blueberry v1.0 - Instruções de Interatividade:\n\n" +
-            "• Segure SHIFT enquanto arrasta arquivos no Windows.\n" +
-            "• Mova o cursor em direção ao formato desejado (o formato acenderá em azul neon).\n" +
-            "• Solte o botão do mouse: o arquivo é convertido e salvo imediatamente ao lado do original.\n" +
-            "• Se soltar o SHIFT antes de soltar o mouse, o menu fecha e você move o arquivo normalmente.",
-            "Blueberry 🫐 - Ajustes & Dicas",
+            "Blueberry - Guia de Atalhos e Dicas:\n\n" +
+            "• Shift + Arrastar: Exibe os formatos de conversão disponíveis.\n" +
+            "• Ctrl + Shift + Arrastar: Exibe ferramentas rápidas (corte, compressão, EXIF, etc).\n" +
+            "• Soltar no centro da roda cancela a operação sem realizar qualquer alteração.\n" +
+            "• Os arquivos processados são salvos na mesma pasta do arquivo de origem.",
+            "Blueberry - Configurações e Dicas",
             MessageBoxButton.OK,
             MessageBoxImage.Information);
     }

@@ -136,9 +136,9 @@ public class WindowsTrayAgent : IDisposable
             uFlags          = NIF_MESSAGE | NIF_ICON | NIF_TIP | NIF_INFO,
             uCallbackMessage = WM_TRAYICON,
             hIcon           = loadedIcon,
-            szTip           = "Blueberry 🫐 — Shift+Arraste para converter",
+            szTip           = "Blueberry — Shift+Arraste para converter",
             szInfo          = "Blueberry está pronto! Segure Shift ao arrastar qualquer arquivo para converter. Ctrl+Shift para ferramentas.",
-            szInfoTitle     = "Blueberry 🫐",
+            szInfoTitle     = "Blueberry",
             uTimeoutOrVersion = 4000,
             dwInfoFlags     = 1
         };
@@ -173,9 +173,9 @@ public class WindowsTrayAgent : IDisposable
         SetForegroundWindow(hwnd);
 
         IntPtr hMenu = CreatePopupMenu();
-        AppendMenu(hMenu, MF_STRING, CMD_OPEN, "🫐  Abrir Blueberry");
+        AppendMenu(hMenu, MF_STRING, CMD_OPEN, "Abrir Blueberry");
         AppendMenu(hMenu, MF_SEPARATOR, 0, "");
-        AppendMenu(hMenu, MF_STRING, CMD_EXIT, "✕  Sair");
+        AppendMenu(hMenu, MF_STRING, CMD_EXIT, "Sair");
 
         int cmd = TrackPopupMenuEx(hMenu, TPM_RETURNCMD | TPM_RIGHTBUTTON | TPM_LEFTALIGN,
                                    pt.X, pt.Y, hwnd, IntPtr.Zero);

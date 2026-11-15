@@ -133,32 +133,24 @@ public partial class RadialMenuWindow : Window
     {
         _cachedFileSize = "–";
 
+        ImgCenterIcon.Visibility = Visibility.Visible;
+        TxtFileIcon.Visibility = Visibility.Collapsed;
+
         if (string.IsNullOrEmpty(src))
         {
-            ImgCenterIcon.Visibility = Visibility.Visible;
-            TxtFileIcon.Visibility = Visibility.Collapsed;
             TxtFileSize.Text = "–";
             return;
         }
-
-        var cat = FileTypeService.GetCategory(src);
-        ImgCenterIcon.Visibility = Visibility.Collapsed;
-        TxtFileIcon.Visibility = Visibility.Visible;
-        TxtFileIcon.Text = cat switch
-        {
-            FileCategory.Image    => "🖼️",
-            FileCategory.Video    => "🎬",
-            FileCategory.Audio    => "🎵",
-            FileCategory.Document => "📄",
-            _                     => "📦"
-        };
 
         try
         {
             var fi = new FileInfo(src);
             if (fi.Exists)
             {
-                _cachedFileSize = FormatSize(fi.Length);
+                var ext = fi.Extension.TrimStart('.').ToUpperInvariant();
+                _cachedFileSize = string.IsNullOrEmpty(ext)
+                    ? FormatSize(fi.Length)
+                    : $"{ext} • {FormatSize(fi.Length)}";
                 TxtFileSize.Text = _cachedFileSize;
             }
         }
@@ -494,8 +486,7 @@ public partial class RadialMenuWindow : Window
 
         ModeBadge.Visibility     = Visibility.Collapsed;
         StatusOverlay.Visibility = Visibility.Visible;
-        TxtStatusIcon.Text       = "⏳";
-        TxtStatusText.Text       = files.Count > 1 ? $"{files.Count} arquivos" : "Processando...";
+        TxtStatusText.Text       = files.Count > 1 ? $"{files.Count} arquivos..." : "Processando...";
 
         bool ok = false;
         foreach (var f in files)
@@ -504,8 +495,7 @@ public partial class RadialMenuWindow : Window
             if (r.IsSuccess) ok = true;
         }
 
-        TxtStatusIcon.Text = ok ? "✓" : "✕";
-        TxtStatusText.Text = ok ? "Pronto!" : "Falhou";
+        TxtStatusText.Text = ok ? "Concluído" : "Falhou";
 
         await Task.Delay(ok ? 550 : 1200);
 
