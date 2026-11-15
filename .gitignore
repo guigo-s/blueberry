@@ -1,0 +1,19 @@
+# .NET Build Artifacts
+bin/
+obj/
+publish/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs & Temp files
+*.log
+*.tmp
+crash.log
+stderr.txt
+stdout.txt
